@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git &amp; GitHub Workflow Project</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #2d3748;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+      color: #fff;
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      opacity: 0.88;
+    }
+
+    nav {
+      background: #2b6cb0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.75rem 1rem;
+    }
+
+    nav a {
+      color: #bee3f8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      color: #1a365d;
+      margin-bottom: 1rem;
+      border-left: 4px solid #2b6cb0;
+      padding-left: 0.75rem;
+    }
+
+    .card p { margin-bottom: 0.75rem; color: #4a5568; }
+
+    .student-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .info-item {
+      background: #ebf8ff;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+    }
+
+    .info-item span {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #2b6cb0;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .info-item strong { font-size: 1rem; color: #1a365d; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: #718096;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.7rem; }
+      .student-info { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Git &amp; GitHub Workflow Project</h1>
+    <p>Demonstrating version control best practices with Git and GitHub</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+
+    <section class="card">
+      <h2>Project Overview</h2>
+      <p>
+        This project demonstrates a complete Git and GitHub version control workflow, covering
+        repository initialization, staged commits, branching, merging, .gitignore configuration,
+        and undo operations using <code>git revert</code>.
+      </p>
+      <p>
+        The workflow follows professional development practices, ensuring a clean, traceable
+        commit history from initial setup through feature integration.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Student Details</h2>
+      <div class="student-info">
+        <div class="info-item">
+          <span>Student Name</span>
+          <strong>Prisha Gupta</strong>
+        </div>
+        <div class="info-item">
+          <span>Student ID</span>
+          <strong>2024EB02432</strong>
+        </div>
+        <div class="info-item">
+          <span>Course</span>
+          <strong>Git &amp; GitHub Workflow</strong>
+        </div>
+        <div class="info-item">
+          <span>Repository</span>
+          <strong>git-workflow-assignment</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Purpose of the Project</h2>
+      <p>
+        Version control is a cornerstone of modern software engineering. This project serves as a
+        hands-on demonstration of how Git manages changes to source code over time, allowing
+        developers to collaborate efficiently, roll back mistakes, and maintain a reliable project
+        history.
+      </p>
+      <p>
+        Through this assignment, the following core Git concepts are exercised in practice:
+        initializing a repository, staging and committing changes, creating and merging feature
+        branches, ignoring unwanted files, and safely undoing commits without rewriting history.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Git &amp; GitHub Workflow Assignment &mdash; Prisha Gupta (2024EB02432)</p>
+  </footer>
+
+</body>
+</html>

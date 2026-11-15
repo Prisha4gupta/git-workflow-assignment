@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About &mdash; Git &amp; GitHub Workflow Project</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #2d3748;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+      color: #fff;
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.4rem;
+    }
+
+    header p { font-size: 1rem; opacity: 0.88; }
+
+    nav {
+      background: #2b6cb0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.75rem 1rem;
+    }
+
+    nav a {
+      color: #bee3f8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      color: #1a365d;
+      margin-bottom: 1rem;
+      border-left: 4px solid #2b6cb0;
+      padding-left: 0.75rem;
+    }
+
+    .card p { margin-bottom: 0.75rem; color: #4a5568; }
+
+    ul.styled {
+      list-style: none;
+      padding: 0;
+      margin-top: 0.5rem;
+    }
+
+    ul.styled li {
+      padding: 0.55rem 0.75rem;
+      border-left: 3px solid #63b3ed;
+      margin-bottom: 0.5rem;
+      background: #f0f7ff;
+      border-radius: 0 6px 6px 0;
+      color: #2d3748;
+    }
+
+    ul.styled li strong { color: #1a365d; }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      background: #ebf8ff;
+      color: #2b6cb0;
+      border: 1px solid #bee3f8;
+      border-radius: 20px;
+      padding: 0.35rem 1rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .student-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.75rem;
+    }
+
+    .student-table th, .student-table td {
+      padding: 0.7rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .student-table th {
+      background: #ebf8ff;
+      color: #2b6cb0;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .student-table td { color: #2d3748; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: #718096;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About This Project</h1>
+    <p>Git &amp; GitHub Workflow Assignment</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+
+    <section class="card">
+      <h2>Project Overview</h2>
+      <p>
+        This project is a practical demonstration of a Git and GitHub version control workflow.
+        It was created as part of an academic assignment to reinforce understanding of core Git
+        operations and collaborative development practices.
+      </p>
+      <p>
+        The repository tracks the full lifecycle of a small web project — from initial
+        setup and feature development to history management and remote synchronization — using
+        only industry-standard Git commands.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Git Workflow Demonstrated</h2>
+      <p>The following Git workflow was followed in this assignment:</p>
+      <ul class="styled">
+        <li><strong>Repository Initialization:</strong> Created a local Git repository using <code>git init -b main</code>.</li>
+        <li><strong>Staging &amp; Committing:</strong> Used <code>git add</code> and <code>git commit</code> to record changes in stages.</li>
+        <li><strong>Branching:</strong> Created a <code>feature</code> branch with <code>git switch -c feature</code> for isolated development.</li>
+        <li><strong>Merging:</strong> Integrated the feature branch back into <code>main</code> using <code>git merge feature</code>.</li>
+        <li><strong>Ignoring Files:</strong> Configured a <code>.gitignore</code> file to exclude log files and temporary directories.</li>
+        <li><strong>Undo Operations:</strong> Used <code>git revert HEAD</code> to safely undo a commit while preserving history.</li>
+        <li><strong>Remote Push:</strong> Connected the local repository to GitHub using <code>git remote add origin</code> and pushed both branches.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Features of the Git Workflow</h2>
+      <ul class="styled">
+        <li><strong>Local Repository Initialization:</strong> The project begins by initializing a Git repository locally, establishing the project root and enabling version tracking from the first file.</li>
+        <li><strong>Version Control:</strong> Every meaningful change is committed with a descriptive message, creating a permanent and traceable record of the project's evolution.</li>
+        <li><strong>Branching:</strong> A dedicated <code>feature</code> branch was created to develop new functionality in isolation, keeping the <code>main</code> branch stable throughout.</li>
+        <li><strong>Merging:</strong> After completing work on the feature branch, it was merged into <code>main</code>, integrating all changes into the primary codebase.</li>
+        <li><strong>Commit History:</strong> A clean, linear commit history is maintained, making it straightforward to review what changed, when, and why.</li>
+        <li><strong>GitHub Integration:</strong> The local repository was connected to a remote repository on GitHub, enabling backup, sharing, and collaboration through <code>git push</code>.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Student Details</h2>
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Name</td><td>Prisha Gupta</td></tr>
+          <tr><td>Student ID</td><td>2024EB02432</td></tr>
+          <tr><td>GitHub</td><td><a href="https://github.com/Prisha4gupta" target="_blank" rel="noopener">github.com/Prisha4gupta</a></td></tr>
+          <tr><td>Repository</td><td>git-workflow-assignment</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Technologies Used</h2>
+      <div class="tech-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Git &amp; GitHub Workflow Assignment &mdash; Prisha Gupta (2024EB02432)</p>
+  </footer>
+
+</body>
+</html>
